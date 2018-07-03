@@ -1,0 +1,76 @@
+{
+  "checks": {
+     
+      "AppPool_WEB_DefaultAppPool": {
+      "handlers": ["default","mailer"],
+      "mail_to": "TF-WM-APP-SUPPORT@Thomson.com",
+      "command": "powershell -NonInteractive -ExecutionPolicy Unrestricted D:\\compass\\self-service\\monitor\\plugins\\check-iis-app-pool.ps1 -appPool DefaultAppPool",
+      "interval": 10,
+      "standalone": true,
+      "handle": true
+    },
+
+      "AppPool_WEB_crosbatch.thomsononeadvisor.com": {
+      "handlers": ["default","mailer"],
+      "mail_to": "TF-WM-APP-SUPPORT@Thomson.com",
+      "command": "powershell -NonInteractive -ExecutionPolicy Unrestricted D:\\compass\\self-service\\monitor\\plugins\\check-iis-app-pool.ps1 -appPool crosbatch.thomsononeadvisor.com",
+      "interval": 10,
+      "standalone": true,
+      "handle": true
+    },
+
+      "AppPool_WEB_crosui.thomsononeadvisor.com": {
+      "handlers": ["default","mailer"],
+      "mail_to": "TF-WM-APP-SUPPORT@Thomson.com",   
+      "command": "powershell -NonInteractive -ExecutionPolicy Unrestricted D:\\compass\\self-service\\monitor\\plugins\\check-iis-app-pool.ps1 -appPool crosui.thomsononeadvisor.com",
+      "interval": 10,
+      "standalone": true,
+      "handle": true
+    },
+
+      "AppPool_WEB_RebalService": {
+      "handlers": ["default","mailer"],
+      "mail_to": "TF-WM-APP-SUPPORT@Thomson.com",
+      "command": "powershell -NonInteractive -ExecutionPolicy Unrestricted D:\\compass\\self-service\\monitor\\plugins\\check-iis-app-pool.ps1 -appPool RebalService",
+      "interval": 10,
+      "standalone": true,
+      "handle": true
+    },
+
+      "AppPool_WEB_BookAppPool": {
+      "handlers": ["default","mailer"],
+      "mail_to": "TF-WM-APP-SUPPORT@Thomson.com",
+      "command": "powershell -NonInteractive -ExecutionPolicy Unrestricted D:\\compass\\self-service\\monitor\\plugins\\check-iis-app-pool.ps1 -appPool BookAppPool",
+      "interval": 10,
+      "standalone": true,
+      "handle": true
+    },
+
+      "AppPool_WEB_InfrastructureService": {
+      "handlers": ["default","mailer"],
+      "mail_to": "TF-WM-APP-SUPPORT@Thomson.com",
+      "command": "powershell -NonInteractive -ExecutionPolicy Unrestricted D:\\compass\\self-service\\monitor\\plugins\\check-iis-app-pool.ps1 -appPool InfrastructureService",
+      "interval": 10,
+      "standalone": true,
+      "handle": true
+      },
+ 
+      "AppPool_WEB_PCService": {
+      "handlers": ["default","mailer"],
+      "mail_to": "TF-WM-APP-SUPPORT@Thomson.com",
+      "command": "powershell -NonInteractive -ExecutionPolicy Unrestricted D:\\compass\\self-service\\monitor\\plugins\\check-iis-app-pool.ps1 -appPool PCService",
+      "interval": 10,
+      "standalone": true,
+      "handle": true
+      },
+
+      "AppPool_WEB_WCFAggregationService": {
+      "handlers": ["default","mailer"],
+      "mail_to": "TF-WM-APP-SUPPORT@Thomson.com",
+      "command": "powershell -NonInteractive -ExecutionPolicy Unrestricted D:\\compass\\self-service\\monitor\\plugins\\check-iis-app-pool.ps1 -appPool WCFAggregationService",
+      "interval": 10,
+      "standalone": true,
+      "handle": true
+      }
+     }
+   }
